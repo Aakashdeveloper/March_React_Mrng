@@ -1,0 +1,28 @@
+package.json
+
+step1
+Go to cmd panel
+
+step2
+>>npm init
+
+> Local package
+> Global package
+//////////////
+React Setup
+Step1
+> npm install -g create-react-app
+>>>Mac  = sudo npm install -g create-react-app
+>>>Run Cmd as admin => npm install -g create-react-app
+
+step2
+> create_react-app firstapp
+
+step3 
+> cd firstapp
+
+step4
+> npm start
+
+step5
+open http://localhost:3000/ in browser
