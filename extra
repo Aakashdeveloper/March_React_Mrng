@@ -26,3 +26,26 @@ step4
 
 step5
 open http://localhost:3000/ in browser
+
+
+//component
+functional
+-> Ligth in weight
+-> Less functionallity 
+-> Presentational Component
+-> Can only handle props
+
+Class Component
+-> Heavy as compare to functional
+-> Lot of functionallity
+-> Can handle state & props
+
+// Es5
+function add(a,b){
+    return a+b
+}
+
+// Es6
+const add = (a,b) => { return a+b }
+
+Ecma Script
