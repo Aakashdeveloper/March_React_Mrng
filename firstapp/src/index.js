@@ -1,18 +1,27 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import Books from './books';
 import Header from './components/Header';
+import NewsList from './components/newsList';
+import JSON from './db.json';
 
-const Home = () => {
-    return(
-        <div>
-            <Header/>
-            <h1>My First Page of React</h1>
-            <h2>This is second tag</h2>
-            <Books></Books>
-        </div>
-    )
+class Home extends Component{
+    constructor(props){
+        super(props);
+
+        this.state={
+            newsData:JSON
+        }
+    }
+    render(){
+        return(
+            <div>
+                <Header/>
+                <NewsList news={this.state.newsData}/>
+            </div>
+        )
+    }
 }
+
 
 ReactDOM.render(<Home/>,document.getElementById('root'))

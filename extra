@@ -49,3 +49,9 @@ function add(a,b){
 const add = (a,b) => { return a+b }
 
 Ecma Script
+
+state
+props
+
+A        Props               B
+State A  ---->               State B
