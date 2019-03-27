@@ -55,3 +55,32 @@ props
 
 A        Props               B
 State A  ---->               State B
+
+/////////
+var a = [1,2,3,4,34,7,73,3464,452]
+undefined
+a.indexOf(1)
+0
+a.indexOf(4)
+3
+a.indexOf(5)
+-1
+a.indexOf(7)
+5
+
+
+/////
+var ages = [32, 33, 16, 40,21];
+const checkAdult = (age) => {
+	return age >= 18;
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.filter((age) => {
+	return age >= 18;});
+}
+
+
+///
+VAR   ==redeclare & reassign
+LET  == cannot redeclare but reassign
+CONST == nor redeclare nor reassign
