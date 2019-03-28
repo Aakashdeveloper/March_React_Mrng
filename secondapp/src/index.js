@@ -1,13 +1,5 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import Routing from './components/Routing';
 
-
-class App extends Component {
-    render(){
-        return(
-            <h1>Routing</h1>
-        )
-    }
-}
-
-ReactDOM.render(<App/>, document.querySelector('#root'))
+ReactDOM.render(<Routing/>, document.querySelector('#root'))
