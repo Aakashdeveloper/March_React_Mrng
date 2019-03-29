@@ -84,3 +84,6 @@ function myFunction() {
 VAR   ==redeclare & reassign
 LET  == cannot redeclare but reassign
 CONST == nor redeclare nor reassign
+
+
+lg md sm xs

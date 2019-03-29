@@ -4,7 +4,10 @@ class Profile extends Component {
     render(){
         return(
             <div>
-                <h2>Profile pagae</h2>
+                <div class="panel panel-danger">
+                    <div class="panel-heading">Profile page Heading</div>
+                    <div class="panel-body">Profile page Content</div>
+                </div>
             </div>
         )
     }
