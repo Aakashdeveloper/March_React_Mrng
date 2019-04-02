@@ -93,3 +93,10 @@ json-server
 
 > npm install -g json-server
 > json-server --watch db.json --port 8900
+
+
+state = 1
+>
+state = 1 (not render)
+>
+state = 2 ()
