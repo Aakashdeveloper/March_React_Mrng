@@ -51,3 +51,27 @@
     font-weight: 100;
     margin: 20px 0px
 }
+/*=====================
+        Header
+=======================*/
+header{
+    text-align: center;
+    font-size:30px;
+    border-bottom:1px soild skyblue;
+    color:white;
+    background: lightblue
+
+}
+
+/*======
+Albums
+*======*/
+
+.album_list{
+    margin:20px;
+}
+.album_list > img{
+    float: left;
+    width:40%;
+    margin:10px;
+}
