@@ -6,6 +6,7 @@ import Home from './Home';
 import Profile from './profile';
 import Posts from './posts';
 import PostDetails from './postsDetails';
+import Lifecycle from './lifecycle';
 
 class Routing extends Component{
     render(){
@@ -13,21 +14,22 @@ class Routing extends Component{
             <BrowserRouter>
                 <div>
                     <header>
-                        <nav class="navbar navbar-inverse">
-                            <div class="container-fluid">
-                                <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span> 
+                        <nav className="navbar navbar-inverse">
+                            <div className="container-fluid">
+                                <div className="navbar-header">
+                                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span>
+                                    <span className="icon-bar"></span> 
                                 </button>
-                                <a class="navbar-brand" >React App</a>
+                                <a className="navbar-brand">React App</a>
                                 </div>
-                                <div class="collapse navbar-collapse" id="myNavbar">
-                                <ul class="nav navbar-nav">
+                                <div className="collapse navbar-collapse" id="myNavbar">
+                                <ul className="nav navbar-nav">
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/posts">Posts</Link></li> 
                                     <li><Link to="/profile">Profile</Link> </li> 
+                                    <li><Link to="/lifecycle">LifeCycle</Link> </li> 
                                 </ul>
                                 </div>
                             </div>
@@ -40,6 +42,7 @@ class Routing extends Component{
                     <Route exact path="/posts" component={Posts}></Route>
                     <Route path="/posts/:id" component={PostDetails}></Route>
                     <Route path="/profile" component={Profile}></Route>
+                    <Route path="/lifecycle" component={Lifecycle}></Route>
                 </div>
             </BrowserRouter>
         )
