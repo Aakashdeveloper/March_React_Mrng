@@ -100,3 +100,7 @@ state = 1
 state = 1 (not render)
 >
 state = 2 ()
+
+
+
+npm i @aakashdeveloper/create-node-app
