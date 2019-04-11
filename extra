@@ -104,3 +104,7 @@ state = 2 ()
 
 
 npm i @aakashdeveloper/create-node-app
+
+//
+mapStateToProps = they will recive the state
+mapDispatchToProps = to call actions
