@@ -36,14 +36,52 @@ export function selectedNews(id){
     .then(response => response.json())
 
     return{
-        type: 'GET_SELCETED_NEW',
+        type: 'GET_SELCETED_NEWS',
         payload:request
     }
 }
 
 export function clearSelectedNews(){
     return{
-        type: 'CLEAR_SELCETED_NEW',
+        type: 'CLEAR_SELCETED_NEWS',
         payload:[]
+    }
+}
+
+
+///////////
+export function selectedGallery(id){
+    const request = fetch(`${URL}/galleries?id=${id}`,{method:'GET'})
+    .then(response => response.json())
+
+    return{
+        type: 'GET_SELCETED_GALLERY',
+        payload:request
+    }
+}
+
+export function clearSelectedGallery(){
+    return{
+        type: 'CLEAR_SELCETED_GALLERY',
+        payload:[]
+    }
+}
+
+/////
+export function handleLikes(array,id){
+
+    const requesst = fetch(`${URL}/articles/${id}`,{
+        method:'PATCH',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({likes:array})
+    })
+    .then(response => response.json())
+
+    return{
+        type:'HANDLE_LIKES_ARTICLE',
+        payload:requesst
     }
 }
