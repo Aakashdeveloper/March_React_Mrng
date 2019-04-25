@@ -108,3 +108,12 @@ npm i @aakashdeveloper/create-node-app
 //
 mapStateToProps = they will recive the state
 mapDispatchToProps = to call actions
+
+
+>npm run build
+>/var/www
+>nginx.conf
+
+
+docker build . -t react-app
+docker run -p 7800:3000 react-app
